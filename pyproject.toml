@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grokvideo2api"
+version = "0.1.0"
+description = "Small OpenAI-compatible Grok video bridge for NewAPI and WeChat."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+grokvideo2api = "grokvideo2api.server:main"
+
+[tool.setuptools]
+packages = ["grokvideo2api"]
+
